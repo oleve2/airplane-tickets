@@ -1,0 +1,46 @@
+
+@import 'variables';
+
+.params-block {
+  /*border: 1px solid black;*/
+  margin-bottom: 20px;
+  /*padding: 10px 20px 40px 20px;*/
+  padding: 0;
+}
+
+.params__logo {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.params__currList {
+  display: flex;
+
+}
+
+%buttonCurr {
+  width: 80px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  border: 1px solid lightgrey;
+  background-color: white;
+  color: $color-selected;
+}
+
+.params__divCurrency {
+  @extend %buttonCurr;
+}
+
+.params__divCurrency_selected {
+  @extend %buttonCurr;
+  background-color: $color-selected;
+  color: white;
+  border: 1px solid $color-selected;
+}
+
+.params__divCurrency:hover {
+  background-color: $color-hover;
+  cursor: pointer;
+}

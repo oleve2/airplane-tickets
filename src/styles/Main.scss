@@ -1,0 +1,53 @@
+
+@import 'variables';
+
+@import 'Ticket';
+@import 'ParamsPanel';
+@import '_CheckElement';
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: $backgr-page;
+  min-height: 100vh;
+}
+
+.main_wrapper {
+  width: 80%;
+  margin: 5px auto;
+
+}
+
+.main__img {
+  width: 60px;
+}
+
+.main_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main__body {
+  display: flex;
+}
+
+.main__params {
+  width: 30%;
+  max-width: 260px;
+  padding: 20px;
+  background-color: $backgr-block;
+  margin-top: 20px;
+  height: fit-content;
+}
+
+.main__tickets {
+  width: 70%;
+  margin-left: 20px;
+  overflow-x: scroll;
+  min-width: 900px;  
+}
+

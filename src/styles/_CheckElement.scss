@@ -1,0 +1,16 @@
+
+@import 'variables';
+
+.checkElem_wrapper {
+  display: flex;
+  justify-content: space-between;
+  /*border: 1px solid blue;*/
+  padding: 10px;
+}
+
+.checkElem_wrapper:hover, .checkElem__head:hover, 
+  .checkElem__tail:hover, .checkElem__label:hover {
+  cursor: pointer;
+  background-color: $color-hover;
+}
+

@@ -1,0 +1,101 @@
+@import 'variables';
+
+.ticket_wrapper {
+  @extend %flex-row;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  min-width: 800px;
+  background-color: $backgr-block;
+}
+
+/**/
+.ticket_body {
+  display: flex;
+}
+%ticket_body__block {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 0px 10px;
+  margin-top: 10px;
+}
+
+.ticket_body__block_L {
+  @extend %ticket_body__block;
+  align-items: flex-start;
+}
+.ticket_body__block_M {
+  @extend %ticket_body__block;
+  align-items: center;
+}
+.ticket_body__block_R {
+  @extend %ticket_body__block;
+  align-items: flex-end;
+}
+
+
+.ticket_body__time {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+.ticket_body__city {
+  font-size: 18px;
+}
+.ticket_body__date {
+  font-size: 14px;
+}
+
+.tb__line {
+  width: calc(200px - 30px);
+  height: 1px;
+  border-bottom: 3px solid black;
+}  
+.tb__plane {
+  width: 30px;
+}
+.tb__stops {
+  text-align: center;
+}
+.tb__imgwrapper {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+
+/**/
+.ticket_header {
+  @extend %flex-col;
+  width: 300px;
+  height: 150px;
+  align-items: center;
+  justify-content: space-around;
+  border-right: 1px solid gray;
+  padding: 20px;
+}
+.ticket_header__img {
+  width: 150px;
+}
+
+%buyButtonTemp {
+  @extend %flex-col;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 180px;
+  height: 50px;
+
+  background-color: #fc6405;
+  color: white;
+  border-radius: 5px;
+}
+.ticket_header__buyBtn {
+  @extend %buyButtonTemp;
+}
+.ticket_header__buyBtn:hover {
+  @extend %buyButtonTemp;
+  background-color: #f79a48;
+  cursor: pointer;
+}

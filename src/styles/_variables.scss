@@ -1,0 +1,15 @@
+$color-selected: #349ceb;
+$color-hover: #afdafa;
+
+$backgr-page: #e9f0f7;
+$backgr-block: white;
+
+%flex-col {
+  display: flex;
+  flex-direction: column;  
+}
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
